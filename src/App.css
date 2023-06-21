@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg)
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient__bg {
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+
+    padding: 4rem 6rem;
+}
+
+.section__padding {
+
+    margin: 4rem 6rem;
+}
+
+.scale-up-center {
+
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/*此处animation 定义动画，名字 加上时间参数各种组合 http://www.wsg3096.com/responsive/show579.html
+ */
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem;
+    }
+
+    .section__margin {
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+
+    .section__margin {
+        margin: 4rem 2rem;
+    }
+}
+
+/* for mobile */
+
+/* 
+@media screen and (max-width: 700px)：这是媒体查询的开头，它指定了一个条件，
+即屏幕的最大宽度为 700 像素时应用以下样式。
+
+.section__padding：这是一个类选择器，用于选中具有 section__padding 类的元素。
+
+
+padding: 4rem;：这是一个 CSS 属性声明，将被选中的元素的内边距（padding）设置为 4 
+倍根元素的字体大小。4rem 表示使用相对单位 rem，它是相对于根元素的字体大小而定的。
+
+.section__margin：这是一个类选择器，用于选中具有 section__margin 类的元素。
+
+margin: 4rem;：这是一个 CSS 属性声明，将被选中的元素的外边距（margin）
+设置为 4 倍根元素的字体大小。
+
+通过上述代码，当屏幕宽度小于或等于 700 像素时，具有 .section__padding 类
+的元素将具有 4 倍根元素字体大小的内边距，而具有 .section__margin 类
+的元素将具有 4 倍根元素字体大小的外边距。这样可以根据屏幕宽度调整元素的内边距和外边距
+，以实现响应式布局。
+
+
+*/
