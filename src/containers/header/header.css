@@ -11,8 +11,6 @@
     flex-direction: column;
 
     margin-right: 5rem;
-
-    /* justify-content 主轴方向的排列方式;align-items:交叉轴方向的对齐方式*/
 }
 
 .gpt3__header-content h1 {
@@ -20,80 +18,62 @@
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
-    /* or 121% */
     letter-spacing: -0.04em;
-    /* em 相对于根节点计算的单位 */
 }
 
 .gpt3__header-content p {
     font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     color: var(--color-text);
+
     margin-top: 1.5rem;
 }
 
 .gpt3__header-content__input {
-
     width: 100%;
     margin: 2rem 0 1rem;
-    /* 外边距，从上边距开始顺时针旋转的 四个边的边距，不给值，就是默认值 */
+
     display: flex;
     flex-direction: row;
-
 }
 
 .gpt3__header-content__input input {
     flex: 2;
     width: 100%;
     min-height: 50px;
-    /* 不到这个值也会显示为最小高度 */
     font-family: var(--font-family);
-    /* 文字字体样式，例如在google浏览器直接输入：华文行楷 */
     font-weight: 400;
-
-    background: var(--color-footer);
-    /* 背景有很多属性，这里只表示颜色 */
-    border: 2px solid var(--color-footer);
-    /* 边框，2就够了 */
     font-size: 20px;
-    border-radius: 5px 0px 0px 5px;
-    /* 表示从左上角开始的四个角顺时针给定四个角的值，圆弧度 */
-
-    line-height: 27px;
-    color: #3D6184;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
     padding: 0 1rem;
-    /*padding 内边距：从上边开始顺时针四个方向 */
     outline: none;
     color: #fff;
 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
-
 
 .gpt3__header-content__input button {
     flex: 0.6;
-    /* 复元素作用于display, flex实现边缘化的控制 */
     width: 100%;
     min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     background: #FF4820;
-    border-radius: 5px 0px 0px 5px;
-    color: #ffffff;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
     cursor: pointer;
     outline: none;
-    padding: 0 1rem;
-    border: none;
 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-
 }
 
 .gpt3__header-content__people {
@@ -102,10 +82,8 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+
     margin-top: 2rem;
-    /* 向上外边距 */
-
-
 }
 
 .gpt3__header-content__people img {
@@ -119,17 +97,15 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 38px;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
 }
 
-/* gpt3__header-image */
 .gpt3__header-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .gpt3__header-image img {
@@ -137,7 +113,7 @@
     height: 100%;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width: 1050px) {
     .gpt3__header {
         flex-direction: column;
     }
@@ -147,9 +123,8 @@
     }
 }
 
-
-@media screen and (max-width:650px) {
-    .gpt3__header h1 {
+@media screen and (max-width: 650px) {
+    .gpt3__header-content h1 {
         font-size: 48px;
         line-height: 60px;
     }
@@ -158,7 +133,7 @@
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .gpt3__header-content__people {
         flex-direction: column;
     }
@@ -174,8 +149,8 @@
     }
 }
 
-@media screen and (max-width:490px) {
-    .gpt3__header h1 {
+@media screen and (max-width: 490px) {
+    .gpt3__header-content h1 {
         font-size: 36px;
         line-height: 48px;
     }
@@ -183,14 +158,6 @@
     .gpt3__header-content p {
         font-size: 14px;
         line-height: 24px;
-    }
-
-    .gpt3__header-content__people {
-        flex-direction: column;
-    }
-
-    .gpt3__header-content__people p {
-        margin: 0;
     }
 
     .gpt3__header-content__input input,
