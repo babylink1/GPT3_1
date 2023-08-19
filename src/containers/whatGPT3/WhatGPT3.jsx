@@ -6,13 +6,13 @@ const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
       <Feature
-        title="What is GPT-3"
+        title="What is GSS-3"
         text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by."
       />
     </div>
     <div className="gpt3__whatgpt3-heading">
       <h1 className="gradient__text">
-        The possibilities are beyond your imagination
+        利用数据分析、自动化和人工智能的强大力量，挖掘海量数据的千丝万缕联系。精准施策，唯“策”是用，找到效率、成本、质量的最佳平衡点，交付可量化的商业价值
       </h1>
       <p>Explore the Library</p>
     </div>
